@@ -1,0 +1,148 @@
+/* Univarsal Css */
+*{
+     margin: 0;
+     padding: 0;
+     font-family: sans-serif;
+}
+/* Header section */
+.banner{
+     width: 100%;
+     height: 969px;
+     background-image: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)), url(picture/pexels-pixabay-147411.jpg);
+     background-size: cover;
+     background-position: center;
+}
+.navbar{
+     width: 85%;
+     margin: auto;
+     padding: 20px 0;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+
+/* Logo section */
+
+.logo{
+     font-size: 65px;
+     color: whitesmoke;
+     cursor: pointer;
+     background: rgb(63,94,251);
+background: linear-gradient(120deg, rgba(63,94,251,1) 47%, rgba(255,238,237,1) 96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition:all ease .005s;
+}
+
+.logo:hover{
+     background: rgb(63,94,251);
+background: linear-gradient(120deg, rgba(63,94,251,1) 28%, rgba(251,16,5,1) 96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+/* Nav menu section  */
+
+.nav-menu{
+     padding: 25px 0;
+}
+
+.nav-menu ul{
+     list-style: none;
+}
+
+.nav-menu ul li{
+     display: inline-block;
+     margin: 0 25px;
+     position: relative;
+}
+
+.nav-menu ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 20px;
+     text-transform: uppercase;
+}
+
+/* nav-bar animation   */
+
+.nav-menu ul li::after{
+     content: '';
+     width: 0;
+     height: 3px;
+     background: #009688;
+     position: absolute;
+     left: 0px;
+     bottom: -10px;
+     transition: ease .7s;
+}
+
+.nav-menu ul li:hover::after{
+     width: 100%;
+}
+
+/* Banner section writting  */
+
+.center-text{
+     width: 100%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     color: white;
+     text-align: center;
+}
+
+.center-text h1{
+     text-transform: uppercase;
+     font-size: 40px;
+     margin-top: 80px;
+}
+
+.center-text p{
+     margin: 20px 0;
+     font-weight: 100;
+     line-height: 30px;
+}
+
+/* button section  */
+
+button{
+     width: 200px;
+     padding: 13px 0;
+     background: transparent;
+     border-radius: 25px;
+     margin-top: 20px;
+     border: 1px solid #009688;
+     cursor: pointer;
+     font-size: 20px;
+     background: transparent;
+     color: #fff;
+     position: relative;
+     overflow: hidden;
+     text-align: center;
+}
+
+.left-button{
+     margin-right: 20px;
+}
+
+/* button animation  */
+
+
+span{
+     background: #009688;
+     width: 0;
+     height: 100%;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     z-index: -1;
+     transition: all ease 1s;
+}
+
+button:hover span{
+     width: 100%;
+}
+
+button:hover{
+     border: none;
+}
